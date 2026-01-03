@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  
+
   const navItems = [
     { href: "/components/buttons", label: "Buttons" },
     { href: "/components/inputs", label: "Inputs" },
@@ -14,8 +14,9 @@
       {#each navItems as item}
         <a
           href={item.href}
-          class="block rounded-md px-3 py-2 text-sm transition-colors {$page.url.pathname === item.href
-            ? 'bg-neutral-100 dark:bg-neutral-900 font-medium'
+          class="block rounded-md px-3 py-2 text-sm transition-colors {$page.url.pathname ===
+          item.href
+            ? 'bg-neutral-100 font-medium dark:bg-neutral-900'
             : 'hover:bg-neutral-100 dark:hover:bg-neutral-900'}"
         >
           {item.label}
