@@ -13,23 +13,23 @@
 </script>
 
 <div>
-  <h1 class="mb-6 text-3xl font-bold">Modal</h1>
-  <p class="mb-8 text-neutral-600 dark:text-neutral-400">
+  <h1 class="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">Modal</h1>
+  <p class="mb-6 text-sm text-neutral-600 dark:text-neutral-400 sm:mb-8 sm:text-base">
     A modal component using the native HTML <code
       class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm dark:bg-neutral-900">&lt;dialog&gt;</code
     > element with minimal JavaScript.
   </p>
 
-  <div class="space-y-8">
+  <div class="space-y-6 sm:space-y-8">
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Basic Modal</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Basic Modal</h2>
       <button onclick={() => openModal(basicDialog)} class="btn btn-primary"> Open Modal </button>
 
       <dialog
         bind:this={basicDialog}
-        class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950"
+        class="top-1/2 left-1/2 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950 sm:w-full"
       >
-        <div class="p-6">
+        <div class="p-4 sm:p-6">
           <h3 class="mb-4 text-xl font-semibold">Modal Title</h3>
           <p class="mb-6 text-neutral-600 dark:text-neutral-400">
             This is a modal dialog using the native HTML <code
@@ -37,7 +37,7 @@
               >&lt;dialog&gt;</code
             > element. It requires minimal JavaScript to open and close.
           </p>
-          <div class="flex justify-end gap-3">
+          <div class="flex flex-col-reverse justify-end gap-3 sm:flex-row">
             <button onclick={() => closeModal(basicDialog)} class="btn btn-secondary">
               Cancel
             </button>
@@ -50,16 +50,16 @@
     </section>
 
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Modal with Form</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Modal with Form</h2>
       <button onclick={() => openModal(formDialog)} class="btn btn-primary">
         Open Form Modal
       </button>
 
       <dialog
         bind:this={formDialog}
-        class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950"
+        class="top-1/2 left-1/2 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950 sm:w-full"
       >
-        <form method="dialog" class="p-6">
+        <form method="dialog" class="p-4 sm:p-6">
           <h3 class="mb-4 text-xl font-semibold">Contact Form</h3>
           <div class="mb-4 space-y-4">
             <div>
@@ -105,7 +105,7 @@
               ></textarea>
             </div>
           </div>
-          <div class="flex justify-end gap-3">
+          <div class="flex flex-col-reverse justify-end gap-3 sm:flex-row">
             <button type="button" onclick={() => closeModal(formDialog)} class="btn btn-secondary">
               Cancel
             </button>
@@ -116,16 +116,16 @@
     </section>
 
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Large Modal</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Large Modal</h2>
       <button onclick={() => openModal(largeDialog)} class="btn btn-primary">
         Open Large Modal
       </button>
 
       <dialog
         bind:this={largeDialog}
-        class="top-1/2 left-1/2 max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950"
+        class="top-1/2 left-1/2 w-[calc(100%-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-lg border border-neutral-200 bg-white p-0 shadow-xl backdrop:bg-black/50 dark:border-neutral-800 dark:bg-neutral-950 sm:w-full"
       >
-        <div class="p-6">
+        <div class="p-4 sm:p-6">
           <h3 class="mb-4 text-2xl font-semibold">Large Modal Content</h3>
           <div class="mb-6 space-y-4 text-neutral-600 dark:text-neutral-400">
             <p>
@@ -159,8 +159,15 @@
 <style>
   dialog {
     margin: 0;
-    max-width: calc(100vw - 2rem);
-    max-height: calc(100vh - 2rem);
+    max-width: calc(100vw - 1rem);
+    max-height: calc(100vh - 1rem);
+  }
+
+  @media (min-width: 640px) {
+    dialog {
+      max-width: calc(100vw - 2rem);
+      max-height: calc(100vh - 2rem);
+    }
   }
 
   dialog::backdrop {

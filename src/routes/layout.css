@@ -47,6 +47,7 @@
 
   .btn {
     @apply rounded-md border px-3 py-2 text-sm font-medium shadow-xs transition-all;
+    min-height: 44px; /* Better touch target for mobile */
   }
 
   .btn-primary {
@@ -78,5 +79,6 @@
   .form-control {
     @apply w-full rounded-md border px-3 py-2 text-sm;
     background: var(--form-control-bg);
+    min-height: 44px; /* Better touch target for mobile */
   }
 }

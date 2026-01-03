@@ -1,18 +1,18 @@
 <div>
-  <h1 class="mb-6 text-3xl font-bold">Accordion</h1>
-  <p class="mb-8 text-neutral-600 dark:text-neutral-400">
+  <h1 class="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">Accordion</h1>
+  <p class="mb-6 text-sm text-neutral-600 dark:text-neutral-400 sm:mb-8 sm:text-base">
     A collection of accordion components using plain HTML and Tailwind CSS.
   </p>
 
-  <div class="space-y-8">
+  <div class="space-y-6 sm:space-y-8">
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Basic Accordion</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Basic Accordion</h2>
       <div class="space-y-2">
         <details
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>What is an accordion?</span>
             <svg
@@ -29,7 +29,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="text-neutral-600 dark:text-neutral-400">
               An accordion is a UI component that allows users to expand and collapse sections of
               content. It's useful for organizing information in a compact space.
@@ -41,7 +41,7 @@
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>How does it work?</span>
             <svg
@@ -58,7 +58,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="text-neutral-600 dark:text-neutral-400">
               This accordion uses native HTML <code
                 class="rounded bg-neutral-100 px-1.5 py-0.5 text-sm dark:bg-neutral-900"
@@ -76,7 +76,7 @@
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>Can I customize it?</span>
             <svg
@@ -93,7 +93,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="text-neutral-600 dark:text-neutral-400">
               Yes! You can customize the colors, spacing, borders, and animations using Tailwind
               utility classes. The accordion is fully accessible and works with keyboard navigation.
@@ -104,13 +104,13 @@
     </section>
 
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Accordion with Multiple Items</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Accordion with Multiple Items</h2>
       <div class="space-y-2">
         <details
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>Section 1</span>
             <svg
@@ -127,7 +127,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="mb-2 text-neutral-600 dark:text-neutral-400">
               Content for section 1 goes here.
             </p>
@@ -143,7 +143,7 @@
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>Section 2</span>
             <svg
@@ -160,7 +160,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="text-neutral-600 dark:text-neutral-400">Content for section 2 goes here.</p>
           </div>
         </details>
@@ -169,7 +169,7 @@
           class="group rounded-lg border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
         >
           <summary
-            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900"
+            class="flex cursor-pointer items-center justify-between px-3 py-3 font-medium transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 sm:px-4"
           >
             <span>Section 3</span>
             <svg
@@ -186,7 +186,7 @@
               />
             </svg>
           </summary>
-          <div class="border-t border-neutral-200 px-4 py-3 dark:border-neutral-800">
+          <div class="border-t border-neutral-200 px-3 py-3 dark:border-neutral-800 sm:px-4">
             <p class="text-neutral-600 dark:text-neutral-400">Content for section 3 goes here.</p>
           </div>
         </details>

@@ -43,14 +43,14 @@
 </script>
 
 <div>
-  <h1 class="mb-6 text-3xl font-bold">Inputs</h1>
-  <p class="mb-8 text-neutral-600 dark:text-neutral-400">
+  <h1 class="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">Inputs</h1>
+  <p class="mb-6 text-sm text-neutral-600 dark:text-neutral-400 sm:mb-8 sm:text-base">
     A collection of input components and form controls.
   </p>
 
-  <div class="space-y-8">
+  <div class="space-y-6 sm:space-y-8">
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Text Input</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Text Input</h2>
       <div class="mb-4 max-w-md space-y-4">
         <div class="form-group">
           <label for="text-input" class="form-label">Text Input</label>
@@ -76,7 +76,7 @@
     </section>
 
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Textarea</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Textarea</h2>
       <div class="mb-4 max-w-md">
         <div class="form-group">
           <label for="textarea" class="form-label">Textarea</label>
@@ -92,7 +92,7 @@
     </section>
 
     <section>
-      <h2 class="mb-4 text-xl font-semibold">Select</h2>
+      <h2 class="mb-3 text-lg font-semibold sm:mb-4 sm:text-xl">Select</h2>
       <div class="mb-4 max-w-md">
         <div class="form-group">
           <label for="select" class="form-label">Select</label>
