@@ -9,9 +9,9 @@
   ];
 </script>
 
-<div class="flex min-h-[calc(100vh-4rem)]">
+<div class="flex min-h-[calc(100vh-4rem)] gap-8">
   <!-- Left Navigation -->
-  <aside class="w-64 border-r px-6 py-8">
+  <aside class="w-64 px-4 py-10">
     <nav class="space-y-1">
       {#each navItems as item}
         <a
